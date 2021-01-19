@@ -1,0 +1,13 @@
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.exe
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.deps.json
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.runtimeconfig.json
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.runtimeconfig.dev.json
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.dll
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\bin\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.pdb
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.csprojAssemblyReference.cache
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.AssemblyInfoInputs.cache
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.AssemblyInfo.cs
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.csproj.CoreCompileInputs.cache
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.dll
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.pdb
+C:\Users\pmagnerius.II\Documents\GitHub\PatMag_StoneScissorsPaper\obj\Debug\netcoreapp3.1\PatMag_StoneScissorsPaper.genruntimeconfig.cache
