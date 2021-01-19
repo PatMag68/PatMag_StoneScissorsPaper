@@ -12,6 +12,7 @@ namespace PatMag_StoneScissorsPaper
             int programScore = 0;
             int playerScore = 0;
             bool keepPlaying = true;
+            bool gameDone = false;
 
             Console.WriteLine("Welcome to a game of Scissors, Rock, Paper against the PC.\nFirst to 3 points wins and you will select your hand first.\n");
             while (keepPlaying)
@@ -21,7 +22,7 @@ namespace PatMag_StoneScissorsPaper
                     Random rnd = new Random();
                     int programRandomHand = rnd.Next(1, 3);
                     //S = 1, R = 2, P = 3
-                    Console.WriteLine("Please select hand:\nPress S for SCISSORS.\nPress R for ROCK.\nPress P for PAPER.");
+                    Console.WriteLine("\n\nPlease select hand:\nPress S for SCISSORS.\nPress R for ROCK.\nPress P for PAPER.");
                     string playerHand = Console.ReadKey().Key.ToString();
 
                     if (playerHand == "S" | playerHand == "R" | playerHand == "P")
@@ -67,38 +68,39 @@ namespace PatMag_StoneScissorsPaper
                     }
 
                 }
-                if (playerScore > programScore)
+                if (playerScore > programScore && gameDone == false)
                 {
+                    gameDone = true;
                     Console.WriteLine("You won with " + playerScore + " to " + programScore + ".\n");
                 }
-                else if (programScore > playerScore)
+                else if (programScore > playerScore && gameDone == false)
                 {
+                    gameDone = true;
                     Console.WriteLine("The program won with " + programScore + " to " + playerScore + ".\n");
                 }
-                Console.WriteLine("Want to play again? Press Y or N.");
+                Console.WriteLine("\nWant to play again? Press Y or N.\n");
                 string playOrNot = Console.ReadKey().Key.ToString();
-                if (playOrNot == "N")
+                if (playOrNot == "Y" | playOrNot == "N")
                 {
-                    keepPlaying = false;
-                }
-                else if (playOrNot == "Y")
-                {
-                    playerScore = 0;
-                    programScore = 0;
+                    if (playOrNot == "N")
+                    {
+                        keepPlaying = false;
+                    }
+                    else if (playOrNot == "Y")
+                    {
+                        gameDone = false;
+                        playerScore = 0;
+                        programScore = 0;
+                    }
+                    else
+                    {
+
+                    }
                 }
             }
-        }
-
-        static void ScoreMaker()
-        {
 
         }
-
-
-
-
     }
+
 }
-
-
 
