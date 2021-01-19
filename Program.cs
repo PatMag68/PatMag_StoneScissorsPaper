@@ -13,7 +13,7 @@ namespace PatMag_StoneScissorsPaper
             int playerScore = 0;
             bool keepPlaying = true;
 
-            Console.WriteLine("Welcome to a game of Scissors, Rock, Paper against the PC.\nFirst to 3 points wins and\nyou will select your hand first.\n");
+            Console.WriteLine("Welcome to a game of Scissors, Rock, Paper against the PC.\nFirst to 3 points wins and you will select your hand first.\n");
             while (keepPlaying)
             {
                 while (playerScore < 3 && programScore < 3)
@@ -24,39 +24,46 @@ namespace PatMag_StoneScissorsPaper
                     Console.WriteLine("Please select hand:\nPress S for SCISSORS.\nPress R for ROCK.\nPress P for PAPER.");
                     string playerHand = Console.ReadKey().Key.ToString();
 
-                    if (playerHand == "S" && programRandomHand == 2)
+                    if (playerHand == "S" | playerHand == "R" | playerHand == "P")
                     {
-                        programScore++;
-                        Console.WriteLine("\nYou selected Scissors and the program selected Rock.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
-                    }
-                    else if (playerHand == "S" && programRandomHand == 3)
-                    {
-                        playerScore++;
-                        Console.WriteLine("\nYou selected Scissors and the program selected Paper.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
-                    }
-                    else if (playerHand == "R" && programRandomHand == 1)
-                    {
-                        playerScore++;
-                        Console.WriteLine("\nYou selected Rock and the program selected Scissors.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
-                    }
-                    else if (playerHand == "R" && programRandomHand == 3)
-                    {
-                        programScore++;
-                        Console.WriteLine("\nYou selected Rock and the program selected Paper.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
-                    }
-                    else if (playerHand == "P" && programRandomHand == 2)
-                    {
-                        playerScore++;
-                        Console.WriteLine("\nYou selected Paper and the program selected Rock.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
-                    }
-                    else if (playerHand == "P" && programRandomHand == 1)
-                    {
-                        programScore++;
-                        Console.WriteLine("\nYou selected Paper and the program selected Scissors.\nYou: " + playerScore + "\nProgram: " + programScore + "\n");
+                        if (playerHand == "S" && programRandomHand == 2)
+                        {
+                            programScore++;
+                            Console.WriteLine("\n\nYou selected Scissors and the program selected Rock.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else if (playerHand == "S" && programRandomHand == 3)
+                        {
+                            playerScore++;
+                            Console.WriteLine("\n\nYou selected Scissors and the program selected Paper.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else if (playerHand == "R" && programRandomHand == 1)
+                        {
+                            playerScore++;
+                            Console.WriteLine("\n\nYou selected Rock and the program selected Scissors.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else if (playerHand == "R" && programRandomHand == 3)
+                        {
+                            programScore++;
+                            Console.WriteLine("\n\nYou selected Rock and the program selected Paper.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else if (playerHand == "P" && programRandomHand == 2)
+                        {
+                            playerScore++;
+                            Console.WriteLine("\n\nYou selected Paper and the program selected Rock.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else if (playerHand == "P" && programRandomHand == 1)
+                        {
+                            programScore++;
+                            Console.WriteLine("\n\nYou selected Paper and the program selected Scissors.\nYou: " + playerScore + "\nProgram: " + programScore + "\n\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("\n\nYou selected the same hands and this round is a draw. No points.\n\n");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("\nYou selected the same hands and this round is a draw. No points.");
+                        Console.WriteLine("\n\nYou must enter S, R or N.\n");
                     }
 
                 }
